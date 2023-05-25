@@ -6,7 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -31,8 +30,9 @@ public class Student {
 	@Column(unique = true)
 	private String email;
 	
-	@Min(value = 0,message = "Minimum score should be 0")
+	@Size(min = 0,max = 1000,message = "Minimum score should be 0 and maximum should be 1000")
 	private Integer score;
+	
 
 
 }
