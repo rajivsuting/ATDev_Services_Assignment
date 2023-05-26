@@ -1,4 +1,5 @@
 # ATDev_Services_Assignment
+<p>A simple student management system where you can perform CRUD operations like add a student, get list of all the student, find a particular student using his/her id, delete a student and update a student</p>
 
 <h1> Endpoints </h1>
 <h3>PostMapping</h3>
